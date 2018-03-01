@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chrome Extension Options</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+
+<body>
+
+  時間帯:
+  <select id="timezone">
+   <option value="lunch">ランチ</option>
+   <option value="dinner">ディナー</option>
+   <option value="all">全て</option>   
+  </select>
+ 
+  　別タブ数:
+  <select id="tab_num">
+   <option value="5">5</option>
+   <option value="10">10</option>
+   <option value="15">15</option>
+  </select>
+
+  　<button id="save">保存</button>
+  
+  <div id="status"></div>
+
+
+  <script src="options.js"></script>
+</body>
+</html>
