@@ -1,19 +1,23 @@
-<script src="jquery-3.2.1.min.js"></script>
-<script src="popup.js"></script>
-<div>
-  時間帯:
-  <select id="timezone">
-   <option value="lunch">ランチ</option>
-   <option value="dinner">ディナー</option>
-   <option value="all">全て</option>   
-  </select>
- 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="popup.js"></script>
+</head>
+<body style="width:350px">
   別タブ数:
   <select id="tab_num">
-   <option value="5">5</option>
-   <option value="10">10</option>
-   <option value="15">15</option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
   </select>
 
-  <button id="search_btn">表示</button>
-</div>
+  <br><br>
+
+  時間帯:
+  <button class="search_btn" value="all">全て</button>
+  <button class="search_btn" value="dinner">ディナー</button>
+  <button class="search_btn" value="lunch">ランチ</button>
+</body>
+</html>

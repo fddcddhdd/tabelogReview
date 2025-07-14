@@ -1,31 +1,30 @@
 {
-    "name": "別タブで食べログレビュー",
-    "version": "0.0.5",
-    "manifest_version": 2,
-    "description": "その店の食べログレビューを別タブで表示",
-    "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-    },  
-  "browser_action": {
+  "name": "別タブで食べログレビュー",
+  "version": "0.0.6",
+  "manifest_version": 3,
+  "description": "その店の食べログレビューを別タブで表示",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
     "default_title": "食べログレビューを別タブで表示",
     "default_icon": "icon16.png",
-    "default_popup": "popup.html"    
-    
+    "default_popup": "popup.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "service_worker": "background.js"
   },
   "permissions": [
-    "activeTab",
     "tabs",
     "storage"
   ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "options_ui": {
     "page": "options.html",
-    "chrome_style": true    
-  }  
+    "open_in_tab": true
+  }
 }
