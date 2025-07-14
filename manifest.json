@@ -1,6 +1,6 @@
 {
   "name": "別タブで食べログレビュー",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "manifest_version": 3,
   "description": "その店の食べログレビューを別タブで表示",
   "icons": {
